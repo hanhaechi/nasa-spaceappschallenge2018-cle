@@ -49,6 +49,11 @@ li {
 	color: #8c2031;
 }
 
+.refs,
+.refs:hover {
+	color: #ff707f;
+}
+
 @media only screen and (max-width: 540px) {
 	.map {
 		height: 600px;
