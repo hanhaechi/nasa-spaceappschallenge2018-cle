@@ -30,7 +30,8 @@ li {
 }
 
 #green,
-#orange {
+#orange,
+#red {
 	display: none;
 }
 
@@ -38,7 +39,13 @@ li {
 .orangeLink:hover {
 	color: #a94f0a;
 }
-.orangeLink:hover {
+.orangeLink:hover,
+.redLink:hover {
 	text-decoration: underline;
+}
+
+.redLink,
+.redLink:hover {
+	color: #8c2031;
 }
 

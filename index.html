@@ -25,9 +25,9 @@
 			<div class="mt-5">
 				<div class="card alert infoBox mb-5">
 					<div class="card-body">
-						<h5><span class="fas fa-map-marker-alt"></span> Locate your home</h5>
-						<h5><span class="fas fa-burn"></span> Analyse fire danger based on map layers</h5>
-						<h5><span class="fa fa-list-ul"></span> Decide if you're vulnerable</h5>
+						<h5><span class="fas fa-map-pin"></span> Locate your home</h5>
+						<h5><span class="fas fa-burn"></span> Analyse fire danger based on relevant map layers</h5>
+						<h5><span class="fa fa-question"></span> Decide if you're vulnerable</h5>
 					</div>
 				</div>
 				<div class="map mt-5 embed-responsive embed-responsive-16by9">
@@ -82,8 +82,9 @@
 							<ul>
 								<li>Cut your grass down to a maximum height of 4 inches.</li>
 								<li>Remove fallen leaves, needles, twigs, bark, cones, and small branches.</li>
-								<li>	Use features such as gravel pits, driveways, and stone patios to create firebreaks to stop or slow the spread
-										of fire.</li>
+								<li> Use features such as gravel pits, driveways, and stone patios to create firebreaks to stop or slow the
+									spread
+									of fire.</li>
 							</ul>
 							<h5>Zone 3 - extends up to 200 feet from your home</h5>
 							<ul>
@@ -137,9 +138,33 @@
 					</div>
 				</div>
 
+				<div id="red" class="mb-5">
+					<div class="card alert alert-danger">
+						<div class="card-body">
+							<h4 class="card-title mb-4">Last resort advice</h4>
+							<h5>If you can stil evacuate on your own</h5>
+							<ul>
+								<li>Check to make sure your <strong><a class="redLink" href="http://www.readyforwildfire.org/Emergency-Supply-Kit/">Emergency
+											Supply Kit</a> </strong> is in your vehicle, cover-up to protect against heat and flying embers.
+								</li>
+								<li>Wear long pants, a long sleeve shirt, heavy shoes/boots, cap, dry bandanna for face cover, goggles or
+									glasses. 100% cotton is preferable.</li>
+								<li>Locate your pets and take them with you.</li>
+							</ul>
+							<h5>Trapped? Don’t panic - here are some steps you can take</h5>
+							<ul>
+								<li>If you’re in a <strong>vehicle</strong>, park in an are clear of vegetation, close all doors and windows,
+									seal any vents and turn off heater/air conditioner. Lie on the floor of the vehicle and cover yourself with a
+									wool blanket or jacket. Use cell phone to call 911, describe your situation and listen to their instructions.</li>
+								<li>If you’re <strong>travelling on foot or by bicycle</strong> go to an area clear of vegetation, a ditch or
+									depression on level ground if possible, lie face down, cover up your body call 911.</li>
+								<li>If you're <strong>in your home</strong>: Stay calm, keep your family together. Call 911 and inform
+									authorities of your location. Fill sinks and tubs with cold water. Keep doors and windows closed but unlocked.
+									Stay inside your house. Stay away from outside walls and windows.</li>
+						</div>
+					</div>
+				</div>
 			</div>
-
-
 		</div>
 	</div>
 
@@ -159,6 +184,7 @@
 		document.getElementById("cool").addEventListener("click", function () {
 			document.getElementById("initial").style.display = "none";
 			document.getElementById("orange").style.display = "none";
+			document.getElementById("red").style.display = "none";
 			document.getElementById("green").style.display = "block";
 		});
 
@@ -166,6 +192,14 @@
 			document.getElementById("initial").style.display = "none";
 			document.getElementById("orange").style.display = "block";
 			document.getElementById("green").style.display = "none";
+			document.getElementById("red").style.display = "none";
+		});
+
+		document.getElementById("danger").addEventListener("click", function () {
+			document.getElementById("initial").style.display = "none";
+			document.getElementById("orange").style.display = "none";
+			document.getElementById("green").style.display = "none";
+			document.getElementById("red").style.display = "block";
 		});
 	</script>
 </body>
