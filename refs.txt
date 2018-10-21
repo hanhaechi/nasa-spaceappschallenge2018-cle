@@ -1,5 +1,14 @@
 References we used
 
+Team Members:
+  
+    Andy Mitofsky
+    Julian Ridgway
+    Craig Paulette
+    Adam Tegtmeier
+
+
+
 Our Info
 
     https://2018.spaceappschallenge.org/challenges/volcanoes-icebergs-and-asteroids-oh-my/real-time-fire-app/teams/fire-the-spot/project
