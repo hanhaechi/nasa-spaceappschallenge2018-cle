@@ -1,0 +1,26 @@
+.hal-9000 {
+	margin: 20px 0px -5px 5px;
+}
+
+.map {
+	margin: 0 auto;
+}
+
+.card-body h5 {
+	padding-bottom: 5px;
+}
+
+.card-body h5:last-of-type {
+	padding-bottom: 0px;
+}
+
+.infoBox {
+	color: #701a28;
+    background-color: #e8cb8d;
+    border-color: #d65469;
+	box-shadow: 0 0 40px #ff3c5c;
+}
+
+#green {
+	/* display: none; */
+}
