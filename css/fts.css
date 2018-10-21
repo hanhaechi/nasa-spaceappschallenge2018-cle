@@ -21,6 +21,24 @@
 	box-shadow: 0 0 40px #ff3c5c;
 }
 
-#green {
-	/* display: none; */
+.card-title {
+	font-weight: 700;
 }
+
+li {
+	list-style-type: lower-greek;
+}
+
+#green,
+#orange {
+	display: none;
+}
+
+.orangeLink,
+.orangeLink:hover {
+	color: #a94f0a;
+}
+.orangeLink:hover {
+	text-decoration: underline;
+}
+

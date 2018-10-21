@@ -9,9 +9,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Fire The Spot team">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
 	<title>Fire The Spot</title>
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
 	 crossorigin="anonymous">
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css'>
@@ -21,13 +19,11 @@
 </head>
 
 <body>
-
-
 	<div class="container text-mono">
 		<div class="mt-5">
 			<h1 class="display-2"> fire the sp<span class="ht-tm-element hal-9000"></span>t</h1>
 			<div class="mt-5">
-				<div class="card alert infoBox text-center mb-5">
+				<div class="card alert infoBox mb-5">
 					<div class="card-body">
 						<h5><span class="fas fa-map-marker-alt"></span> Locate your home</h5>
 						<h5><span class="fas fa-burn"></span> Analyse fire danger based on map layers</h5>
@@ -35,10 +31,9 @@
 					</div>
 				</div>
 				<div class="map mt-5 embed-responsive embed-responsive-16by9">
-				
-
-			<iframe class="embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="800px" src="https://team217.maps.arcgis.com/apps/MapSeries/index.html?appid=223a559fc7a644c0b88795ce809f90d0" frameborder="0" scrolling="no"> </iframe>
-				
+					<iframe class="embed-responsive-item" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%"
+					 height="800px" src="https://team217.maps.arcgis.com/apps/MapSeries/index.html?appid=223a559fc7a644c0b88795ce809f90d0"
+					 frameborder="0" scrolling="no"> </iframe>
 				</div>
 			</div>
 			<hr>
@@ -46,9 +41,9 @@
 			<div class="mt-4 mb-4 text-center">
 				<h1 class="display-4"> Are you vulnerable?</h1>
 				<div class="buttons mt-4 pb-4">
-					<button class="btn btn-success btn-shadow px-4 my-2 ml-0">I'm cool</button>
-					<button class="btn btn-warning btn-shadow px-4 my-2 ml-2">I'm worried</button>
-					<button class="btn btn-danger btn-shadow px-4 my-2 ml-2">I'm on fire</button>
+					<button id="cool" class="btn btn-success btn-shadow px-4 my-2 ml-0">I'm cool</button>
+					<button id="worried" class="btn btn-warning btn-shadow px-4 my-2 ml-2">I'm worried</button>
+					<button id="danger" class="btn btn-danger btn-shadow px-4 my-2 ml-2">I'm on fire</button>
 				</div>
 			</div>
 
@@ -63,20 +58,85 @@
 				</div>
 
 				<div id="green" class="mb-5">
-					<div class="card">
-						<div class="card-header">
-							Featured
-						</div>
+					<div class="card alert alert-success">
 						<div class="card-body">
-							<h4 class="card-title">Special title treatment</h4>
-							<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-							<a href="#!" class="btn btn-danger">Go somewhere</a>
-						</div>
-						<div class="card-footer text-muted">
-							2 days ago
+							<h4 class="card-title mb-4">Some steps you might want to be aware of</h4>
+							<p class="card-text">
+								It's useful to have an evacuation plan and discuss it with your family. Think about making a go bag containing
+								necessities (food, medication, at least 1 gallon of water per person per day), this should be light enough to
+								be easily carried by a single person.
+							</p>
+							<p class="card-text">
+								Tune into NOAA Weather Radio (NWR), they broadcast official warnings and other hazards 24/7 and pay attention
+								to the Wireless Emergency Alerts (WEA) that are sent to your phone. </p>
+							<h4 class="card-title">Defending your home</h4>
+							<p class="card-text">FEMA advises dividing your property into 3 Zones in the form of concentric circles
+								expanding outward from your home.</p>
+							<h5>Zone 1 - extends 30 feet from you home</h5>
+							<ul>
+								<li>Remove combustibles from the vicinity - firewood, lawn furniture (umbrellas), dead vegetation, shrubs.</li>
+								<li>Clean your roof, and gutters, remove as much debris as possible.</li>
+								<li>Propane tanks and anything that uses one should be moved out of Zone 1 and into Zone 2.</li>
+							</ul>
+							<h5>Zone 2 - extends 100 feet away from your home/any outcroppings like decks/patios</h5>
+							<ul>
+								<li>Cut your grass down to a maximum height of 4 inches.</li>
+								<li>Remove fallen leaves, needles, twigs, bark, cones, and small branches.</li>
+								<li>	Use features such as gravel pits, driveways, and stone patios to create firebreaks to stop or slow the spread
+										of fire.</li>
+							</ul>
+							<h5>Zone 3 - extends up to 200 feet from your home</h5>
+							<ul>
+								<li>Reduce potential fuel sources by thinning and pruning vegetation.</li>
+							</ul>
 						</div>
 					</div>
 				</div>
+
+				<div id="orange" class="mb-5">
+					<div class="card alert alert-warning">
+						<div class="card-body">
+							<h4 class="card-title mb-4">Evacuation steps prepared for you by <a class="orangeLink" href="http://www.readyforwildfire.org">ReadyForWildfire</a>
+							</h4>
+							<h5>Inside your home</h5>
+							<ul>
+								<li>Shut all windows and doors, leaving them unlocked.</li>
+								<li>Remove flammable window shades, curtains and close metal shutters.</li>
+								<li>Move flammable furniture to the center of the room, away from windows and doors.</li>
+								<li>Shut off gas at the meter; turn off pilot lights.</li>
+								<li>Leave your lights on so firefighters can see your house under smoky conditions.</li>
+								<li>Shut off the air conditioning.</li>
+							</ul>
+							<h5>Outside your home</h5>
+							<ul>
+								<li>Gather up flammable items from the exterior of the house and bring them inside (patio furniture, children’s
+									toys, door mats, trash cans, etc.) or place them in your pool.</li>
+								<li>Turn off propane tanks, Move propane BBQ appliances away from structures.</li>
+								<li>Connect garden hoses to outside water valves or spigots for use by firefighters. Fill water buckets and
+									place
+									them around the house.</li>
+								<li>Don’t leave sprinklers on or water running, they can affect critical water pressure.</li>
+								<li>Leave exterior lights on so your home is visible to firefighters in the smoke or darkness of night.</li>
+								<li>Put your Emergency Supply Kit in your vehicle.</li>
+								<li>Back your car into the driveway with vehicle loaded and all doors and windows closed. Carry your car keys
+									with
+									you.</li>
+								<li>Have a ladder available and place it at the corner of the house for firefighters to quickly access your
+									roof.</li>
+								<li>Seal attic and ground vents with pre-cut plywood or commercial seals.</li>
+								<li>Patrol your property and monitor the fire situation. Don’t wait for an evacuation order if you feel
+									threatened.</li>
+								<li>Check on neighbors and make sure they are preparing to leave.</li>
+							</ul>
+							<h5>Pets / Animals</h5>
+							<ul>
+								<li>Keep pets close to you.</li>
+								<li>If possible transport farm animals, to a safer location.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
 			</div>
 
 
@@ -87,17 +147,27 @@
 		<footer class="pt-1">
 			<small class="text-muted"> Theme by <a href="https://hackerthemes.com/bootstrap-themes/neon-glow/" target="_blank">hackerthemes</a></small>
 		</footer>
-
-
 	</div>
-
-
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	 crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 	 crossorigin="anonymous"></script>
+
+	<script>
+		document.getElementById("cool").addEventListener("click", function () {
+			document.getElementById("initial").style.display = "none";
+			document.getElementById("orange").style.display = "none";
+			document.getElementById("green").style.display = "block";
+		});
+
+		document.getElementById("worried").addEventListener("click", function () {
+			document.getElementById("initial").style.display = "none";
+			document.getElementById("orange").style.display = "block";
+			document.getElementById("green").style.display = "none";
+		});
+	</script>
 </body>
 
 </html>
