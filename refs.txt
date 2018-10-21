@@ -10,9 +10,6 @@ Our Info
 
     https://team217.maps.arcgis.com/apps/MapSeries/index.html?appid=223a559fc7a644c0b88795ce809f90d0
 
-
-
-
 Thanks to the NASA Subject Master Experts Carol Tolbert and Bobby Oliver
 
 Tools we used
@@ -58,17 +55,14 @@ References on Fire speed and distance calculation
     - http://www.nationalatlas.gov/articles/mapping/a_projections.html
     - https://stackoverflow.com/questions/1019997/convert-lat-longs-to-x-y-co-ordinates
 
-
     - https://stackoverflow.com/questions/19412462/getting-distance-between-two-points-based-on-latitude-longitude
-
-
 
 Reference on Drought Wildfire Correlation
     - https://www.fs.fed.us/rm/pubs_journals/2016/rmrs_2016_littell_j001.pdf
 
 
-
-
 Photo Credits
 james-owen-656170-unsplash.jpg
+
+Visual Theme by hackerthemes at https://hackerthemes.com/bootstrap-themes/neon-glow/
 
